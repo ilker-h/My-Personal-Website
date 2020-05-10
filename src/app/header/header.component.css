@@ -1,0 +1,48 @@
+/* .toolbar #twitter-logo:hover {
+  opacity: 0.8;
+} */
+
+/* Since the toolbar uses flex box by default, this will make sure that the spacer element
+ takes all the available remaining space between the other elements.
+ From CSS example from https://material.angular.io/components/toolbar/examples */
+ .spacer {
+  flex: 1 1 auto;
+}
+
+mat-toolbar {
+  background-color: #1976d2;
+  color: white;
+}
+
+.menu-item {
+  padding: 0 20px;
+}
+
+.hamburger-menu-icon {
+  background: transparent;
+  border: none;
+  color: white;
+}
+
+/* for screens less than 800px wide (which is the point when the icons collide with the logo) */
+@media (max-width: 800px) {
+  /* this hides all the menu items in the header */
+  .hide-when-collides-with-logo {
+    display: none;
+  }
+}
+
+/* for screens more than 800px wide, keep the hamburger menu hidden */
+@media (min-width: 801px) {
+  /* this ensures that the hamburger menu icon is only shown for any screen that's less than 800px wide */
+    .hamburger-menu-shown-on-small-screens {
+    display: none;
+  }
+}
+
+/* Removes annoying blue or orange outline that gets put on the things that you click on.
+ from https://stackoverflow.com/questions/30981429/angular-material-ng-click-strange-border-highlight */
+ *:focus {
+  outline: none;
+  border: 0;
+}

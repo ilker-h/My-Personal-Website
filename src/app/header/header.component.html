@@ -1,0 +1,36 @@
+<div class="container-fluid">
+  <div class="row">
+    <!-- Navbar -->
+    <mat-toolbar>
+        <h1 style="font-size: 20px;">Ilker Hadzhalaran</h1>
+
+        <span class="spacer"></span>
+
+        <div class="hide-when-collides-with-logo">
+          <a class="menu-item" routerLink="/about">About</a>
+          <a class="menu-item" routerLink="/about">Skills</a>
+          <a class="menu-item" routerLink="/about">Experience</a>
+          <a class="menu-item" routerLink="/about">Projects</a>
+          <a class="menu-item" routerLink="/about">Contact</a>
+        </div>
+
+        <!-- Hamburger Menu... -->
+        <div class="hamburger-menu-shown-on-small-screens">
+            <button mat-icon-button class="hamburger-menu-icon" matTooltip="Menu" [matMenuTriggerFor]="hamburgerMenu">
+              <mat-icon [inline]="true" style="font-size: 35px">menu</mat-icon>
+            </button>
+
+            <mat-menu #hamburgerMenu="matMenu">
+              <button style="margin-right: 50px" mat-menu-item>About</button>
+              <button style="margin-right: 50px" mat-menu-item routerLink="/items">Skills</button>
+              <button style="margin-right: 50px" mat-menu-item routerLink="/folders">Experience</button>
+              <button style="margin-right: 50px" mat-menu-item routerLink="/settings">Projects</button>
+              <button style="margin-right: 50px" mat-menu-item>Contact</button>
+            </mat-menu>
+        </div>
+        <!-- /Hamburger Menu -->
+    </mat-toolbar>
+    <!-- /Navbar -->
+
+  </div>
+</div>
