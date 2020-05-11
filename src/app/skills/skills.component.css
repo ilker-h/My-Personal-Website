@@ -1,0 +1,15 @@
+h1 {
+  font-weight: bolder;
+  font-size: 40px;
+  text-align: center;
+  margin: 40px auto;
+}
+
+mat-card {
+  margin-bottom: 30px;
+  background-color:#BBDEFB;
+}
+
+i {
+  float: left;
+}
