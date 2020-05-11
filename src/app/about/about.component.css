@@ -1,0 +1,38 @@
+.image {
+  margin: auto;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 200px;
+}
+
+.rounded-border {
+  margin: 10px auto;
+  padding: 30px;
+  border: 10px double #1976d2;
+  border-radius: 50px;
+}
+
+h1 {
+  font-weight: bolder;
+}
+
+p {
+  font-size: large;
+}
+
+.icons-and-button {
+  text-align: center;
+  width: 345px;
+  margin: auto;
+}
+
+.icons {
+  color: black;
+  margin: auto 10px;
+}
+
+button {
+  background-color: #1976d2;
+  color: white;
+  margin: auto 10px;
+}
