@@ -11,24 +11,44 @@ button {
   margin: auto;
 }
 
+.job-title-and-date {
+  width: 90%;
+  margin: 25px auto 0px auto;
+}
+
+h3 {
+  font-size: 20px;
+}
+
 /* This will make sure that the spacer element takes all the available remaining space between the two elements.
  From CSS example from https://material.angular.io/components/toolbar/examples */
  .spacer {
   flex: 1 1 auto;
 }
 
-li  {
-  font-size: 17px;
+hr {
+  width:100%;
+  margin-top: -11px;
+  border-width: 1px;
+  background-color:black;
+}
+
+.image-and-job-description {
+  width: 90%;
+  margin: 5px auto 125px auto;
 }
 
 .image {
   margin: auto;
   text-align: center;
-  vertical-align: middle;
-  line-height: 170px;
 }
 
 .job-description {
-  margin: 10px auto 40px auto;
-  padding: 15px;
+  margin:  auto;
+  padding: 15px 15px 0px 15px;
+}
+
+li  {
+  font-size: 17px;
+  padding-bottom: 10px;
 }
