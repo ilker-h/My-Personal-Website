@@ -1,6 +1,5 @@
 <div class="container-fluid">
   <div class="row">
-
     <!-- Navbar -->
     <mat-toolbar>
 
@@ -9,11 +8,11 @@
         <span class="spacer"></span>
 
         <div class="hide-when-collides-with-logo">
-          <a class="menu-item" routerLink="/about">About</a>
-          <a class="menu-item" routerLink="/about">Skills</a>
-          <a class="menu-item" routerLink="/about">Experience</a>
-          <a class="menu-item" routerLink="/about">Projects</a>
-          <a class="menu-item" routerLink="/about">Contact</a>
+          <a class="menu-item" [routerLink]="['/']" fragment="about">About</a>
+          <a class="menu-item" [routerLink]="['/']" fragment="skills">Skills</a>
+          <a class="menu-item" [routerLink]="['/']" fragment="experience">Experience</a>
+          <a class="menu-item" [routerLink]="['/']" fragment="projects">Projects</a>
+          <a class="menu-item" [routerLink]="['/']" fragment="contact">Contact</a>
         </div>
 
         <!-- Hamburger Menu -->

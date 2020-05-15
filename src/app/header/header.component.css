@@ -16,6 +16,8 @@ mat-toolbar {
 
 .menu-item {
   padding: 0 20px;
+  color: white;
+  text-decoration: none;
 }
 
 .hamburger-menu-icon {
