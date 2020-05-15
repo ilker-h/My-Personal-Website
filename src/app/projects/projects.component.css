@@ -1,0 +1,44 @@
+h1 {
+  font-weight: bolder;
+  font-size: 40px;
+  text-align: center;
+  margin: 10px auto 40px auto;
+}
+
+.overall-container {
+  margin: 10px auto 30px auto;
+}
+
+.container-styling {
+  background-color: #bbdefb;
+  border-radius: 30px;
+}
+
+.image {
+  margin: auto;
+  text-align: center;
+}
+
+img {
+  border-radius: 30px;
+}
+
+.description-and-button-and-icons {
+  margin: auto 0px;
+  padding: 20px;
+}
+
+p {
+  padding-bottom: 10px;
+}
+
+button {
+  background-color: #1976d2;
+  color: white;
+  margin: auto 10px auto 16px;
+}
+
+.icons {
+  color: black;
+  margin: 4px 10px 0px 10px;
+}

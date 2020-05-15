@@ -6,6 +6,8 @@ import { OriginalAngularPageComponent } from './original-angular-page/original-a
 import { HeaderComponent } from './header/header.component';
 import { AboutComponent } from './about/about.component';
 import { SkillsComponent } from './skills/skills.component';
+import { ExperienceComponent } from './experience/experience.component';
+import { ProjectsComponent } from './projects/projects.component';
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatToolbarModule} from '@angular/material/toolbar';
@@ -16,7 +18,7 @@ import {MatButtonModule} from '@angular/material/button';
 import {MatCardModule} from '@angular/material/card';
 import {MatListModule} from '@angular/material/list';
 import {MatDividerModule} from '@angular/material/divider';
-import { ExperienceComponent } from './experience/experience.component';
+import {MatTabsModule} from '@angular/material/tabs';
 
 @NgModule({
   declarations: [
@@ -25,7 +27,8 @@ import { ExperienceComponent } from './experience/experience.component';
     HeaderComponent,
     AboutComponent,
     SkillsComponent,
-    ExperienceComponent
+    ExperienceComponent,
+    ProjectsComponent
   ],
   imports: [
     BrowserModule,
@@ -38,6 +41,7 @@ import { ExperienceComponent } from './experience/experience.component';
     MatCardModule,
     MatListModule,
     MatDividerModule,
+    MatTabsModule,
   ],
 
   providers: [],
