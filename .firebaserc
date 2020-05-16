@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "ilker-hadzhalarans-website": {
+      "hosting": {
+        "my-website3": [
+          "ilker-hadzhalarans-website"
+        ]
+      }
+    }
+  }
+}

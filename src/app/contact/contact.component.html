@@ -1,1 +1,13 @@
-<p>contact works!</p>
+<!-- This is a template-driven form -->
+
+<!-- ngForm gets access to the underlying form and then upon submitting the form,
+      the form gets passed to the onSubmit() method using a reference, #enteredData -->
+<form  (ngSubmit)="onSubmit(enteredData)" #enteredData="ngForm">
+<h3>Please feel free to contact me</h3>
+<!-- ngModel will register this as a control in the template-driven form -->
+<input type="text" id="fullName" name="fullName" required minlength="1" ngModel placeholder="* Full Name...">
+<input type="email" id="email" name="email" required minlength="5" ngModel placeholder="* Email Address...">
+<input type="text" id="subject" name="subject" required minlength="1" ngModel placeholder="* Subject...">
+<input type="text" id="message" name="message" required minlength="1" ngModel placeholder="* Message...">
+<button mat-flat-button type="submit">Send Message</button>
+</form>
