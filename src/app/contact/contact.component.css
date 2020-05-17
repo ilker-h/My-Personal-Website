@@ -1,0 +1,41 @@
+h1 {
+  font-weight: bolder;
+  font-size: 40px;
+  text-align: center;
+  margin: 50px auto;
+}
+
+p {
+  font-size: large;
+}
+
+button {
+  background-color: #1976d2;
+  color: white;
+  margin: 30px auto 10px auto;
+}
+
+form button {
+    margin: 20px auto 0px auto;
+}
+
+form {
+  background-color: #bbdefb;
+  border-radius: 30px;
+  border: 2px solid #1976d2;
+}
+
+label {
+  float: left;
+}
+
+input, textarea {
+  margin-bottom: 25px;
+  border-radius: 15px;
+}
+
+.asterisk {
+  color: red;
+  display: inline;
+  cursor: pointer;
+}

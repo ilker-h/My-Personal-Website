@@ -2,6 +2,11 @@
   opacity: 0.8;
 } */
 
+h1 {
+  font-size: 20px;
+  cursor: pointer;
+}
+
 /* Since the toolbar uses flex box by default, this will make sure that the spacer element
  takes all the available remaining space between the other elements.
  From CSS example from https://material.angular.io/components/toolbar/examples */

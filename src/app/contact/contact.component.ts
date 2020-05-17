@@ -26,6 +26,16 @@ export class ContactComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  downloadFile() {
+    // from https://stackoverflow.com/questions/50907542/download-a-file-from-asset-folder-when-clicking-on-a-button
+    const link = document.createElement('a');
+    link.setAttribute('type', 'hidden');
+    link.download = 'Resume - Ilker Hadzhalaran';
+    link.href = 'assets\\Resume - Ilker Hadzhalaran.pdf';
+    link.click();
+    link.remove();
+  }
+
 }
 
 // The documentation for sending things to Firestore is the following:

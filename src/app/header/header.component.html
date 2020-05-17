@@ -3,7 +3,7 @@
     <!-- Navbar -->
     <mat-toolbar>
 
-        <h1 style="font-size: 20px;">Ilker Hadzhalaran</h1>
+        <h1 [routerLink]="['/']" fragment="home">Ilker Hadzhalaran</h1>
 
         <span class="spacer"></span>
 
@@ -22,11 +22,11 @@
             </button>
 
             <mat-menu #hamburgerMenu="matMenu">
-              <button style="margin-right: 50px" mat-menu-item>About</button>
-              <button style="margin-right: 50px" mat-menu-item routerLink="/items">Skills</button>
-              <button style="margin-right: 50px" mat-menu-item routerLink="/folders">Experience</button>
-              <button style="margin-right: 50px" mat-menu-item routerLink="/settings">Projects</button>
-              <button style="margin-right: 50px" mat-menu-item>Contact</button>
+              <button style="margin-right: 50px" mat-menu-item [routerLink]="['/']" fragment="about">About</button>
+              <button style="margin-right: 50px" mat-menu-item [routerLink]="['/']" fragment="skills">Skills</button>
+              <button style="margin-right: 50px" mat-menu-item [routerLink]="['/']" fragment="experience">Experience</button>
+              <button style="margin-right: 50px" mat-menu-item [routerLink]="['/']" fragment="projects">Projects</button>
+              <button style="margin-right: 50px" mat-menu-item [routerLink]="['/']" fragment="contact">Contact</button>
             </mat-menu>
         </div>
         <!-- /Hamburger Menu -->

@@ -2,7 +2,11 @@
   margin: auto;
   text-align: center;
   vertical-align: middle;
-  line-height: 200px;
+  line-height: 200px; /* Not sure if this is needed anymore */
+}
+
+img {
+  border-radius: 500px;
 }
 
 .rounded-border {

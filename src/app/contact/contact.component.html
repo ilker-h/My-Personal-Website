@@ -1,13 +1,82 @@
-<!-- This is a template-driven form -->
+<div class="container">
 
-<!-- ngForm gets access to the underlying form and then upon submitting the form,
-      the form gets passed to the onSubmit() method using a reference, #enteredData -->
-<form  (ngSubmit)="onSubmit(enteredData)" #enteredData="ngForm">
-<h3>Please feel free to contact me</h3>
-<!-- ngModel will register this as a control in the template-driven form -->
-<input type="text" id="fullName" name="fullName" required minlength="1" ngModel placeholder="* Full Name...">
-<input type="email" id="email" name="email" required minlength="5" ngModel placeholder="* Email Address...">
-<input type="text" id="subject" name="subject" required minlength="1" ngModel placeholder="* Subject...">
-<input type="text" id="message" name="message" required minlength="1" ngModel placeholder="* Message...">
-<button mat-flat-button type="submit">Send Message</button>
-</form>
+  <div class="row">
+    <h1>Contact</h1>
+  </div>
+
+  <div class="row" style="margin-bottom: 40px;">
+    <!-- Text -->
+    <div class="col-12 col-md-6" style="padding: 20px;">
+      <h2>Hi, I'm Ilker Hadzhalaran...</h2>
+      <p>
+        Lorem ipsum dolor sit amet,
+        consectetur adipiscing elit, sed do
+        eiusmod tempor incididunt ut labore
+        et dolore magna aliqua. Ut enim ad
+        minim veniam, quis nostrud...
+        <br><br>
+        Lorem ipsum dolor sit amet,
+        consectetur adipiscing elit, sed do
+        eiusmod tempor incididunt ut labore
+        et dolore magna aliqua. Ut enim ad
+        minim veniam, quis nostrud...
+        My specific contact information is in my resume.
+      </p>
+
+      <div class="row">
+        <button mat-flat-button (click)="downloadFile()">Download Resume</button>
+      </div>
+
+      <p style="padding-top: 30px;"><b>Location: </b> Oakville, Ontario (Willing to Relocate)</p>
+      <p style="padding-top: 30px;"><b>Looking For: </b> Full-time Software Developer position starting January 2020</p>
+
+    </div>
+    <!-- /Text -->
+
+    <!-- Form -->
+    <div class="col-12 col-md-6">
+      <div class="row">
+        <div class="col-12">
+
+          <form class="text-center" (ngSubmit)="onSubmit(enteredData)" #enteredData="ngForm">
+            <div style="padding: 50px;">
+
+              <h2>Feel free to contact me!</h2>
+
+              <label for="fullName">Full Name <div class="asterisk" matTooltip="This field is required">*</div></label>
+              <input class="form-control" type="text" id="fullName" name="fullName" ngModel>
+
+              <label for="email">Email <div class="asterisk" matTooltip="This field is required">*</div></label>
+              <input class="form-control" type="email" id="email" name="email" ngModel>
+
+              <label for="subject">Subject <div class="asterisk" matTooltip="This field is required">*</div></label>
+              <input class="form-control" type="text" id="subject" name="subject" ngModel>
+
+              <label for="message">Message <div class="asterisk" matTooltip="This field is required">*</div></label>
+              <textarea class="form-control round-0" type="text" id="message"
+                name="message" rows="3" ngModel></textarea>
+
+              <button mat-flat-button type="submit">Send Message</button>
+
+            </div>
+          </form>
+
+        </div>
+      </div>
+    </div>
+    <!-- /Form -->
+
+  </div>
+</div>
+
+<!--
+      Note: ngForm gets access to the underlying form and then upon submitting the form,
+          the form gets passed to the onSubmit() method using a reference, #enteredData
+
+      Note: the bootstrap class "form-control" doesn't affect the Angular forms' data, it's just for styling.
+          Other bootstrap classes are "text-center" and "round-0"
+
+      Note: the above form is a template-driven form
+
+      Note: "ngModel" registers each input/textarea as a control in the template-driven form
+       -->
