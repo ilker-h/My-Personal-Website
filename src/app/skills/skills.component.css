@@ -8,6 +8,8 @@ h1 {
 mat-card {
   margin-bottom: 30px;
   background-color:#BBDEFB;
+  min-width: 200px;
+  max-width: 330px;
 }
 
 i {
