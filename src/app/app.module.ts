@@ -10,7 +10,6 @@ import { AngularFirestoreModule } from '@angular/fire/firestore';
 
 // Components in this app
 import { AppComponent } from './app.component';
-import { OriginalAngularPageComponent } from './original-angular-page/original-angular-page.component';
 import { HeaderComponent } from './header/header.component';
 import { AboutComponent } from './about/about.component';
 import { SkillsComponent } from './skills/skills.component';
@@ -36,7 +35,6 @@ import { MatTooltipModule } from '@angular/material/tooltip';
 @NgModule({
   declarations: [
     AppComponent,
-    OriginalAngularPageComponent,
     HeaderComponent,
     AboutComponent,
     SkillsComponent,

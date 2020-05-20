@@ -1,11 +1,19 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule, PreloadAllModules } from '@angular/router';
 
-import { AppComponent } from './app.component';
-import { HeaderComponent } from './header/header.component';
+// import { AboutComponent } from './about/about.component';
+// import { SkillsComponent } from './skills/skills.component';
+// import { ExperienceComponent } from './experience/experience.component';
+// import { ProjectsComponent } from './projects/projects.component';
+// import { ContactComponent } from './contact/contact.component';
 
 const routes: Routes = [
-  // { path: '', component: AppComponent },
+  // { path: '', component: AboutComponent, pathMatch: 'full'},
+  // { path: '', component: SkillsComponent},
+  // { path: '', component: ExperienceComponent},
+  // { path: '', component: ProjectsComponent},
+  // { path: '', component: ContactComponent},
+  // { path: '**', redirectTo: '', pathMatch: 'full'}
 ];
 
 @NgModule({
@@ -13,4 +21,3 @@ const routes: Routes = [
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
-

@@ -10,7 +10,7 @@ img {
 }
 
 .rounded-border {
-  margin: 10px auto;
+  margin: 20px auto;
   padding: 30px;
   border: 10px double #1976d2;
   border-radius: 50px;
@@ -24,15 +24,24 @@ p {
   font-size: large;
 }
 
-.icons-and-button {
-  text-align: center;
-  width: 345px;
-  margin: auto;
+/* Applies on mobile screens. Used because on small screens, the button must go onto the line below the icons. */
+@media (max-width: 492px) {
+  .hide-on-small-screens {
+    display: none;
+  }
+}
+
+/* Applies on screens bigger than mobile. Used because on big screens, the button must stay on the same line as the icons. */
+@media (min-width: 493px) {
+  .hide-on-bigger-screens {
+    display: none;
+  }
 }
 
 .icons {
   color: black;
-  margin: auto 10px;
+  margin: 0px 10px;
+  vertical-align: bottom;
 }
 
 button {

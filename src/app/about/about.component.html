@@ -1,8 +1,13 @@
 <div class="container">
-  <div class="row" style="margin: 20px;">
+  <div class="row" style="margin: 90px 20px 20px 20px;">
 
     <div class="col-lg-5 image">
-      <img src="assets\Ilker_Hadzhalaran.jpg" height="300">
+      <div class="hide-on-small-screens">
+        <img src="assets\Ilker_Hadzhalaran.jpg" height="300">
+      </div>
+      <div class="hide-on-bigger-screens">
+        <img src="assets\Ilker_Hadzhalaran.jpg" height="200">
+      </div>
     </div>
 
     <div class="col-lg-6 rounded-border">
@@ -21,11 +26,27 @@
         minim veniam, quis nostrud..
       </p>
 
-        <div class="row icons-and-button">
-          <a href="https://github.com/ilker-h" target="_blank"> <i class="fab fa-github fa-3x icons" matTooltip="GitHub (the code for my projects)"></i> </a>
-          <a href="https://www.linkedin.com/in/ilkerhadzhalaran/" target="_blank"> <i class="fab fa-linkedin fa-3x icons" matTooltip="LinkedIn"></i> </a>
-          <a href="https://vimeo.com/channels/1525169" target="_blank"> <i class="fab fa-vimeo fa-3x icons" matTooltip="Vimeo (video walkthroughs of my projects)"></i> </a>
-          <button mat-flat-button (click)="downloadFile()">Download Resume</button>
+        <div class="row">
+          <div class="col-12 text-center">
+            <div class="hide-on-small-screens">
+              <a href="https://github.com/ilker-h" target="_blank"> <i class="fab fa-github fa-3x icons" matTooltip="GitHub (the code for my projects)"></i> </a>
+              <a href="https://www.linkedin.com/in/ilkerhadzhalaran/" target="_blank"> <i class="fab fa-linkedin fa-3x icons" matTooltip="LinkedIn"></i> </a>
+              <a href="https://vimeo.com/channels/1525169" target="_blank"> <i class="fab fa-vimeo fa-3x icons" matTooltip="Vimeo (video walkthroughs of my projects)"></i> </a>
+              <button mat-flat-button (click)="downloadFile()">Download Resume</button>
+            </div>
+          </div>
+              <div class="col-12 text-center" style="margin-bottom: 10px;">
+                <div class="hide-on-bigger-screens">
+                  <a href="https://github.com/ilker-h" target="_blank"> <i class="fab fa-github fa-3x icons" matTooltip="GitHub (the code for my projects)"></i> </a>
+                  <a href="https://www.linkedin.com/in/ilkerhadzhalaran/" target="_blank"> <i class="fab fa-linkedin fa-3x icons" matTooltip="LinkedIn"></i> </a>
+                  <a href="https://vimeo.com/channels/1525169" target="_blank"> <i class="fab fa-vimeo fa-3x icons" matTooltip="Vimeo (video walkthroughs of my projects)"></i> </a>
+                </div>
+              </div>
+              <div class="col-12 text-center" style="margin-top: 10px;">
+                <div class="hide-on-bigger-screens">
+                  <button mat-flat-button (click)="downloadFile()">Download Resume</button>
+                </div>
+              </div>
         </div>
 
     </div>
