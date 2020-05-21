@@ -6,7 +6,7 @@
 
   <div class="row" style="margin-bottom: 40px; min-width: 300px;">
     <!-- Text -->
-    <div class="col-12 col-md-6" style="padding: 20px;">
+    <div class="col-12 col-md-6 text-column-styling">
       <h2>Hi, nice to meet you...</h2>
       <p>
           If you have a question, comment, or would like to reach out about a new opportunity, 
@@ -27,9 +27,7 @@
     <!-- /Text -->
 
     <!-- Form -->
-    <div class="col-12 col-md-6">
-      <div class="row">
-        <div class="col-12">
+    <div class="col-12 col-md-6" style="margin: 20px auto;">
 
           <form class="text-center" (ngSubmit)="onSubmit(enteredData)" #enteredData="ngForm">
             <div style="padding: 50px;">
@@ -54,8 +52,6 @@
             </div>
           </form>
 
-        </div>
-      </div>
     </div>
     <!-- /Form -->
 

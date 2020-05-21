@@ -1,15 +1,22 @@
+.container {
+    margin-bottom: -40px;
+}
+
 h1 {
   font-weight: bolder;
   font-size: 40px;
   text-align: center;
-  margin: 40px auto;
+  margin: 80px auto 40px auto;
+  color: white;
 }
 
 mat-card {
-  margin-bottom: 30px;
+  margin: 15px auto;
   background-color:#BBDEFB;
   min-width: 200px;
   max-width: 330px;
+  border: 2px solid #1976d2;
+  border-radius: 30px;
 }
 
 i {

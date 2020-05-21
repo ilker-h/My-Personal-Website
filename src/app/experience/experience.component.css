@@ -1,14 +1,22 @@
+.container {
+  background-color: white;
+  border-radius: 30px;
+  border: 2px solid #1976d2;
+  margin: 90px auto -40px auto;
+}
+
 h1 {
   font-weight: bolder;
   font-size: 40px;
   text-align: center;
-  margin: 40px auto;
+  margin: 80px auto 40px auto;
 }
 
 button {
   background-color: #1976d2;
   color: white;
   margin: auto;
+  margin-top: -10px;
 }
 
 .job-title-and-date {

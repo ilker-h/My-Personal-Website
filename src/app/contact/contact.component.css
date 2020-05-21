@@ -2,7 +2,17 @@ h1 {
   font-weight: bolder;
   font-size: 40px;
   text-align: center;
-  margin: 50px auto;
+  margin: 90px auto 40px auto;
+  color: white;
+}
+
+.text-column-styling {
+  padding: 50px; 
+  background-color: white; 
+  border-radius: 30px; 
+  border: 2px solid #1976d2;
+  margin: 20px auto;
+  max-width: 95%;
 }
 
 p {
@@ -23,6 +33,7 @@ form {
   background-color: #bbdefb;
   border-radius: 30px;
   border: 2px solid #1976d2;
+  height: 100%;
 }
 
 label {
