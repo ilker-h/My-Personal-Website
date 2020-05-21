@@ -9,15 +9,41 @@ h1 {
   margin: 10px auto 30px auto;
 }
 
+@media (max-width: 1199px) {
+  .max-width {
+    max-width: 95%;
+  }
+  .hide-last-empty-project {
+    display: none;
+  }
+}
+
+@media (min-width: 1200px) {
+  .max-width {
+    max-width: 48%;
+  }
+}
+
 .container-styling {
   background-color: #bbdefb;
   border-radius: 30px;
   border: 2px solid #1976d2;
+  height: 100%;
 }
 
 .image {
   margin: auto;
   text-align: center;
+  padding: 20px;
+}
+
+@media (max-width: 575px) {
+  .image {
+  padding-bottom: 0px
+  }
+  .overall-container {
+    min-width: 290px;
+  }
 }
 
 img {
@@ -25,7 +51,7 @@ img {
 }
 
 .description-and-button-and-icons {
-  margin: auto 0px;
+  margin: auto;
   padding: 20px;
 }
 
@@ -37,6 +63,22 @@ button {
   background-color: #1976d2;
   color: white;
   margin: auto 10px auto 16px;
+}
+
+@media (max-width: 575px) {
+  .icon-container {
+  margin: auto;
+  text-align: center;
+  }
+}
+
+@media (min-width: 576px) {
+  .icon-container {
+  margin-left: -10px;
+  }
+  .description-and-button-and-icons {
+    min-width: 50px;
+  }
 }
 
 .icons {

@@ -42,6 +42,11 @@ hr {
   margin: 5px auto 125px auto;
 }
 
+#last-image-and-job-description {
+  width: 90%;
+  margin: 5px auto 60px auto;
+}
+
 .image {
   margin: auto;
   text-align: center;
