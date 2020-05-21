@@ -2,11 +2,12 @@
   margin: auto;
   text-align: center;
   vertical-align: middle;
-  line-height: 200px; /* Not sure if this is needed anymore */
+  min-width: 245px;
 }
 
 img {
-  border-radius: 500px;
+  border-radius: 50px;
+  max-width: 100%;
 }
 
 .rounded-border {
@@ -22,7 +23,7 @@ h1 {
 }
 
 p {
-  font-size: large;
+  font-size: larger;
 }
 
 /* Applies on mobile screens. Used because on small screens, the button must go onto the line below the icons. */
