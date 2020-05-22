@@ -36,6 +36,10 @@ export class ContactComponent implements OnInit {
     link.remove();
   }
 
+  successMessage() {
+    alert('You have successfully sent a message! I will reply as soon as I can.');
+  }
+
 }
 
 // The documentation for sending things to Firestore is the following:

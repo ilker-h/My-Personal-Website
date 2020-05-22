@@ -9,10 +9,11 @@ img {
   border-radius: 50px;
   max-width: 100%;
   border: 10px double #1976d2;
+  /* background-color: #bbdefb; */
 }
 
 .rounded-border {
-  background-color: white;
+  background-color: #bbdefb;
   margin: 20px auto;
   padding: 30px;
   border: 10px double #1976d2;
