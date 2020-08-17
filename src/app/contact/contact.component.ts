@@ -11,7 +11,8 @@ export class ContactComponent implements OnInit {
 
   constructor(public firestore: AngularFirestore) { }
 
-    public onSubmit(form: NgForm) {
+  public onSubmit(form: NgForm) {
+    if (form.valid) {
       const fullName: string = form.value.fullName;
       const email: string = form.value.email;
       const subject: string = form.value.subject;
@@ -19,8 +20,12 @@ export class ContactComponent implements OnInit {
 
       // "contactFormaData" is the name of the collection I made on Firestore
       this.firestore.collection('contactFormData').add({
-        AllData : {FullName: fullName, Email: email, Subject: subject, Message: message}
-        });
+        AllData: { FullName: fullName, Email: email, Subject: subject, Message: message }
+      });
+      alert('You have successfully sent a message! I will reply as soon as I can.');
+    } else {
+      alert('Please fill in all of the form fields and/or fix all errors before submitting the form. Thank you.');
+    }
   }
 
   ngOnInit(): void {
@@ -34,10 +39,6 @@ export class ContactComponent implements OnInit {
     link.href = 'assets\\Resume - Ilker Hadzhalaran.pdf';
     link.click();
     link.remove();
-  }
-
-  successMessage() {
-    alert('You have successfully sent a message! I will reply as soon as I can.');
   }
 
 }
