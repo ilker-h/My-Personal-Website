@@ -9,10 +9,11 @@
     <div class="col-12 col-md-6 text-column-styling">
       <h2>Hi, nice to meet you...</h2>
       <p>
-          If you have a question, comment, or would like to reach out about a new opportunity, 
-          please feel free to contact me using the contact form (or through my contact information, found in my resume).
+        If you have a question, comment, or would like to reach out about a new opportunity,
+        please feel free to contact me using the contact form (or through my contact information, found in my resume).
         <br><br>
-        I am currently working as a Software Developer (Co-op) between May-Aug, 2020, then I will have my final semester of school between 
+        I am currently working as a Software Developer (Co-op) between May-Aug, 2020, then I will have my final semester
+        of school between
         Sep-Dec, 2020. After that, I will be available for a full-time position!
       </p>
 
@@ -29,28 +30,56 @@
     <!-- Form -->
     <div class="col-12 col-md-6" style="margin: 20px auto;">
 
-          <form class="text-center" (ngSubmit)="onSubmit(enteredData)" #enteredData="ngForm">
-            <div style="padding: 50px;">
+      <form class="text-center" (ngSubmit)="onSubmit(enteredData)" #enteredData="ngForm">
+        <div style="padding: 50px;">
 
-              <h2>Feel free to contact me!</h2>
+          <h2>Feel free to contact me!</h2>
 
-              <label for="fullName">Full Name <div class="asterisk" matTooltip="This field is required">*</div></label>
-              <input class="form-control" type="text" id="fullName" name="fullName" ngModel>
+          <label for="fullName">Full Name <div class="asterisk" matTooltip="This field is required">*</div></label>
+          <input class="form-control" type="text" id="fullName" name="fullName" ngModel #fullName="ngModel" required>
 
-              <label for="email">Email <div class="asterisk" matTooltip="This field is required">*</div></label>
-              <input class="form-control" type="email" id="email" name="email" ngModel>
-
-              <label for="subject">Subject <div class="asterisk" matTooltip="This field is required">*</div></label>
-              <input class="form-control" type="text" id="subject" name="subject" ngModel>
-
-              <label for="message">Message <div class="asterisk" matTooltip="This field is required">*</div></label>
-              <textarea class="form-control round-0" type="text" id="message"
-                name="message" rows="3" ngModel></textarea>
-
-              <button mat-flat-button type="submit" (click)="successMessage()">Send Message</button>
-
+          <div *ngIf="fullName.invalid && (fullName.dirty || fullName.touched)" class="alert alert-danger">
+            <div *ngIf="fullName.errors.required">
+              Name is required.
             </div>
-          </form>
+          </div>
+
+          <label for="email">Email <div class="asterisk" matTooltip="This field is required">*</div></label>
+          <input class="form-control" type="email" id="email" name="email" ngModel #email="ngModel" required email>
+
+          <div *ngIf="email.invalid && (email.dirty || email.touched)" class="alert alert-danger">
+
+            <div *ngIf="email.errors.required">
+              Email is required.
+            </div>
+            <div *ngIf="email.errors.email">
+              Email must be in the format of "example@example.com".
+            </div>
+          </div>
+
+          <label for="subject">Subject <div class="asterisk" matTooltip="This field is required">*</div></label>
+          <input class="form-control" type="text" id="subject" name="subject" ngModel #subject="ngModel" required>
+
+          <div *ngIf="subject.invalid && (subject.dirty || subject.touched)" class="alert alert-danger">
+            <div *ngIf="subject.errors.required">
+              Subject is required.
+            </div>
+          </div>
+
+          <label for="message">Message <div class="asterisk" matTooltip="This field is required">*</div></label>
+          <textarea class="form-control round-0" type="text" id="message" name="message" rows="3" ngModel
+            #message="ngModel" required></textarea>
+
+          <div *ngIf="message.invalid && (message.dirty || message.touched)" class="alert alert-danger">
+            <div *ngIf="message.errors.required">
+              Message is required.
+            </div>
+          </div>
+
+          <button mat-flat-button type="submit">Send Message</button>
+
+        </div>
+      </form>
 
     </div>
     <!-- /Form -->
