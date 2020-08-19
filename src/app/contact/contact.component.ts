@@ -1,4 +1,4 @@
-import { Component, OnInit, HostListener } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { AngularFirestore } from '@angular/fire/firestore';
 import { NgForm } from '@angular/forms';
 
@@ -11,16 +11,21 @@ export class ContactComponent implements OnInit {
 
   constructor(public firestore: AngularFirestore) { }
 
+
+  public ngOnInit(): void {
+  }
+
   public onSubmit(form: NgForm) {
     if (form.valid) {
       const fullName: string = form.value.fullName;
       const email: string = form.value.email;
       const subject: string = form.value.subject;
       const message: string = form.value.message;
+      const timeStamp: string = new Date().toUTCString();
 
       // "contactFormaData" is the name of the collection I made on Firestore
       this.firestore.collection('contactFormData').add({
-        AllData: { FullName: fullName, Email: email, Subject: subject, Message: message }
+        AllData: { FullName: fullName, Email: email, Subject: subject, Message: message, TimeStamp: timeStamp }
       });
       alert('You have successfully sent a message! I will reply as soon as I can.');
     } else {
@@ -28,10 +33,8 @@ export class ContactComponent implements OnInit {
     }
   }
 
-  ngOnInit(): void {
-  }
 
-  downloadFile() {
+  public downloadFile() {
     // from https://stackoverflow.com/questions/50907542/download-a-file-from-asset-folder-when-clicking-on-a-button
     const link = document.createElement('a');
     link.setAttribute('type', 'hidden');

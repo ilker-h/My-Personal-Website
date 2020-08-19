@@ -9,10 +9,10 @@ export class ExperienceComponent implements OnInit {
 
   constructor() { }
 
-  ngOnInit(): void {
+  public ngOnInit(): void {
   }
 
-  downloadFile() {
+  public downloadFile() {
     // from https://stackoverflow.com/questions/50907542/download-a-file-from-asset-folder-when-clicking-on-a-button
     const link = document.createElement('a');
     link.setAttribute('type', 'hidden');

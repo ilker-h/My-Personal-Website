@@ -19,9 +19,6 @@ import { ContactComponent } from './contact/contact.component';
 import { AppRoutingModule } from './app-routing.module';
 import { MaterialModule } from './material.module';
 
-// Angular Material
-
-
 @NgModule({
   declarations: [
     AppComponent,
