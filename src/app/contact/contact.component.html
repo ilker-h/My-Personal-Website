@@ -30,7 +30,7 @@
     <!-- Form -->
     <div class="col-12 col-md-6" style="margin: 20px auto;">
 
-      <form class="text-center" (ngSubmit)="onSubmit(enteredData)" #enteredData="ngForm">
+      <form class="text-center" (ngSubmit)="onSubmit(enteredData); enteredData.resetForm();" #enteredData="ngForm">
         <div style="padding: 50px;">
 
           <h2>Feel free to contact me!</h2>
