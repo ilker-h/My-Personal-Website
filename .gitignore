@@ -47,8 +47,10 @@ Thumbs.db
 
 # ------------- I added these: -------------
 
+# Firebase
 .firebase/
 firestore.rules
+.firebaserc
 
 *.log
 
@@ -56,5 +58,6 @@ firestore.rules
 #See "Lecture 33: Conflict Resolution" at 4:30, https://www.udemy.com/github-ultimate/learn/lecture/4731806#overview
 *.orig
 
+# environment variables
 src/environments/environment.ts
 src/environments/environment.prod.ts
