@@ -8,6 +8,7 @@ import { NgForm } from '@angular/forms';
   styleUrls: ['./contact.component.css']
 })
 export class ContactComponent implements OnInit {
+  successMessage = false;
 
   constructor(public firestore: AngularFirestore) { }
 
@@ -27,7 +28,14 @@ export class ContactComponent implements OnInit {
       this.firestore.collection('contactFormData').add({
         AllData: { FullName: fullName, Email: email, Subject: subject, Message: message, TimeStamp: timeStamp }
       });
-      alert('You have successfully sent a message! I will reply as soon as I can.');
+
+      form.resetForm();
+      this.successMessage = true;
+
+      setTimeout(() => {
+        this.successMessage = false;
+      }, 7000);
+
     } else {
       alert('Please fill in all of the form fields and/or fix all errors before submitting the form. Thank you.');
     }

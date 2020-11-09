@@ -29,7 +29,7 @@
     <!-- Form -->
     <div class="col-12 col-md-6" style="margin: 20px auto;">
 
-      <form class="text-center" (ngSubmit)="onSubmit(enteredData); enteredData.resetForm();" #enteredData="ngForm">
+      <form class="text-center" (ngSubmit)="onSubmit(enteredData);" #enteredData="ngForm">
         <div style="padding: 50px;">
 
           <h2>Feel free to contact me!</h2>
@@ -76,6 +76,9 @@
           </div>
 
           <button mat-flat-button type="submit">Send Message</button>
+          <div *ngIf="successMessage" class="alert alert-success" id="success-message">
+            You have successfully sent a message! I will reply as soon as I can.
+          </div>
 
         </div>
       </form>

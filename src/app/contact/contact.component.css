@@ -7,9 +7,9 @@ h1 {
 }
 
 .text-column-styling {
-  padding: 50px; 
-  background-color: #bbdefb; 
-  border-radius: 30px; 
+  padding: 50px;
+  background-color: #bbdefb;
+  border-radius: 30px;
   border: 2px solid #1976d2;
   margin: 20px auto;
   max-width: 95%;
@@ -26,7 +26,7 @@ button {
 }
 
 form button {
-    margin: 20px auto 0px auto;
+  margin: 20px auto 0px auto;
 }
 
 form {
@@ -49,4 +49,8 @@ input, textarea {
   color: red;
   display: inline;
   cursor: pointer;
+}
+
+#success-message {
+  margin-top: 30px;
 }
