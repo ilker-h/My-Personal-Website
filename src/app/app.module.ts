@@ -2,11 +2,15 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 // Connection to Firebase (using AngularFire library)
 import { AngularFireModule } from '@angular/fire';
 import { environment } from '../environments/environment';
 import { AngularFirestoreModule } from '@angular/fire/firestore';
+
+// External Libraries
+import { CarouselModule } from 'ngx-owl-carousel-o';
 
 // Components in this app
 import { AppComponent } from './app.component';
@@ -37,9 +41,10 @@ import { TestimonialsComponent } from './testimonials/testimonials.component';
     AngularFirestoreModule,
     AppRoutingModule,
     FormsModule,
-    MaterialModule
+    MaterialModule,
+    BrowserAnimationsModule,
+    CarouselModule
   ],
-
   providers: [],
   bootstrap: [AppComponent]
 })

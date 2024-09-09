@@ -52,7 +52,7 @@ h1:hover {
   }
 }
 
-/* for screens more than 950px wide, keep the hamburger menu hidden */
+/* for screens more than 960px wide, keep the hamburger menu hidden */
 @media (min-width: 961px) {
   /* this ensures that the hamburger menu icon is only shown for any screen that's less than 960px wide */
     .hamburger-menu-shown-on-small-screens {
