@@ -1,1 +1,16 @@
-<!-- <p>testimonials works!</p> -->
+<div class="container">
+  <div class="row">
+    <h1>Testimonials <a style="" href="https://www.linkedin.com/in/ilkerhadzhalaran/details/recommendations/"
+        target="_blank"> <i class="fas fa-link  icons" matTooltip="View Testimonials on LinkedIn"></i> </a></h1>
+  </div>
+
+  <div class="row">
+    <div class="col-12">
+      <owl-carousel-o [options]="customOptions">
+        <ng-template carouselSlide *ngFor="let image of images; let i = index">
+          <img [src]="image.src" [alt]="image.alt" class="carousel-image">
+        </ng-template>
+      </owl-carousel-o>
+    </div>
+  </div>
+</div>

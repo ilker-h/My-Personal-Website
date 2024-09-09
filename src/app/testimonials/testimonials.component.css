@@ -1,0 +1,57 @@
+.container {
+  margin: 0px auto -20px auto;
+}
+
+h1 {
+  font-weight: bolder;
+  font-size: 40px;
+  text-align: center;
+  margin: 90px auto 40px auto;
+  color: white;
+}
+
+.icons {
+  color: white;
+  margin: 4px 10px 0px 10px;
+  font-size: 2rem;
+}
+
+.carousel-image {
+  max-width: 900px;
+  width: 100%;
+  height: auto;
+  margin: 0 auto; /* Center the image */
+  border: 2px solid #1976d2;
+  border-radius: 30px;
+}
+
+::ng-deep .owl-carousel .owl-dots .owl-dot {
+  margin-top: 15px;
+}
+
+/* For screens more than 1200px wide, add custom CSS to show the carousel arrows on the left and right of the image. */
+/* For screens less than 1200px wide (which is when the arrows on the left and right start to disappear),
+ show the carousel arrows on the bottom of the image, which is their default behaviour. */
+@media (min-width: 1201px) {
+  ::ng-deep .owl-carousel .owl-nav {
+    position: absolute;
+    top: 160px; /* positions the arrows vertically */
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    z-index: 1;
+  }
+
+  ::ng-deep .owl-carousel .owl-nav .owl-prev,
+  ::ng-deep .owl-carousel .owl-nav .owl-next {
+    background: transparent;
+    border: none;
+    font-size: 2rem; /* size of arrows */
+  }
+
+  ::ng-deep .owl-carousel .owl-nav .owl-prev:hover,
+  ::ng-deep .owl-carousel .owl-nav .owl-next:hover {
+    background-color: white;
+    color: #0d47a1;
+  }
+}
