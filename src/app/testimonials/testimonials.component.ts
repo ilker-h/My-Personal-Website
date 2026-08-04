@@ -13,7 +13,7 @@ export class TestimonialsComponent {
 
   // I ended up not using the captions
   images = [
-    { src: 'assets/testimonials/2024 - Kyle De Souza.png', alt: 'Kyle De Souza', caption: 'Kyle De Souza' },
+    // { src: 'assets/testimonials/2024 - Kyle De Souza.png', alt: 'Kyle De Souza', caption: 'Kyle De Souza' },
     { src: 'assets/testimonials/2020-09 - Pam Renton.png', alt: 'Pam Renton', caption: 'Pam Renton' },
     { src: 'assets/testimonials/2020-01 - Jordan Sousa.png', alt: 'Jordan Sousa', caption: 'Jordan Sousa' },
     { src: 'assets/testimonials/2019 - Lucas Thung.png', alt: 'Lucas Thung', caption: 'Lucas Thung' },
